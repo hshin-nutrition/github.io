@@ -114,6 +114,11 @@ section + section{border-top:1px solid var(--rule)}
   font-size:1.32rem;margin:0 0 .7rem;letter-spacing:-.015em;line-height:1.3;
   max-width:26ch;
 }
+.ko-sum{
+  margin:0 0 1rem;padding-left:.9rem;border-left:2px solid var(--signal);
+  color:var(--ink-2);font-size:.94rem;line-height:1.68;max-width:44ch;
+  word-break:keep-all;
+}
 .area p{margin:0 0 .9rem;max-width:var(--measure);color:var(--ink-2);font-size:.99rem}
 .area p:last-of-type{margin-bottom:0}
 .area .keys{
@@ -159,6 +164,7 @@ section + section{border-top:1px solid var(--rule)}
 .cv .p{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);padding-top:.22em}
 .cv .d{color:var(--ink-2)}
 .cv .d b{font-weight:600;color:var(--ink)}
+.cv-plain li{grid-template-columns:1fr}
 .cv-h{font-family:var(--mono);font-size:.78rem;color:var(--signal-deep);margin:1.8rem 0 .6rem;letter-spacing:-.01em}
 .cv-h:first-child{margin-top:0}
 
@@ -179,6 +185,8 @@ section + section{border-top:1px solid var(--rule)}
 .contact dl{margin:0}
 .contact dt{font-size:.77rem;color:#8FA2C6;font-family:var(--mono);margin-bottom:.18rem;letter-spacing:-.01em}
 .contact dd{margin:0 0 1.1rem;font-size:.97rem;line-height:1.6}
+.contact dd + dd{margin-top:-.75rem;font-size:.88rem;color:#A7B6D2}
+.ko-contact{margin-top:.7rem !important;font-size:.9rem !important;color:#A7B6D2 !important;word-break:keep-all}
 
 footer{padding:1.85rem 0 2.6rem;font-size:.8rem;color:var(--ink-3)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-between}
@@ -235,6 +243,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
         <div class="area-mark" aria-hidden="true"></div>
         <div>
           <h3>Bone, muscle, and fat: body composition and physical function</h3>
+          <p class="ko-sum">뼈와 근육이 줄고 지방이 느는 변화는 함께 옵니다. 체중만으로는 그 변화를 모두 반영하지 못합니다.</p>
           <p>
             Bone loss, muscle loss, and fat gain do not arrive separately. When all three converge — a
             condition described in the literature as osteosarcopenic obesity — neither body weight nor BMI
@@ -257,6 +266,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
         <div class="area-mark" aria-hidden="true"></div>
         <div>
           <h3>Metabolic phenotype and interindividual variability</h3>
+          <p class="ko-sum">같은 식사가 모두에게 같게 작용하지는 않습니다. 흡수와 대사의 개인차를 설명하는 지표를 찾아, 어떤 사람에게 어떤 영양 중재가 맞는지를 구분하려 합니다.</p>
           <p>
             The same meal does not act the same way in every body. We look for measurable markers that
             explain differences in absorption and metabolic response, and ask which nutritional
@@ -276,6 +286,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
         <div class="area-mark" aria-hidden="true"></div>
         <div>
           <h3>Nutritional vulnerability and its social context</h3>
+          <p class="ko-sum">누가 왜 영양적으로 취약해지는지를 개인 요인과 사회적 조건을 함께 넣어 분석합니다.</p>
           <p>
             Cancer survivors, older adults, and socially isolated people do not arrive at the same outcome
             from the same advice. We analyse who becomes nutritionally vulnerable and why, holding
@@ -408,6 +419,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
       <div>
         <h3>Hyehyung Shin</h3>
         <p class="pi-en">Ph.D., MPH · Assistant Professor</p>
+        <p class="ko-sum">영양학과 보건정책을 함께 공부했습니다. 정책기관과 기업을 거쳐 대학으로 돌아오는 동안 관심의 축은 바뀌지 않았습니다. 영양이 몸에 실제로 남기는 결과, 그리고 그것이 사람마다 달라지는 이유입니다.</p>
         <p>
           Trained in both nutritional science and health policy. Ph.D. from Florida State University on
           body composition and physical performance in postmenopausal women; MPH in health policy and
@@ -430,10 +442,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
           <li><span class="p">2005–2006</span><span class="d">Researcher, Primary Healthcare Quality Assessment · <b>HIRA</b></span></li>
         </ul>
         <p class="cv-h">Education</p>
-        <ul class="cv">
-          <li><span class="p">2011</span><span class="d">Ph.D., Nutritional Science · <b>Florida State University</b></span></li>
-          <li><span class="p">2006</span><span class="d">M.P.H., Health Policy and Management · <b>Seoul National University</b></span></li>
-          <li><span class="p">2003</span><span class="d">B.S., Chemistry · <b>University of South Carolina</b></span></li>
+        <ul class="cv cv-plain">
+          <li><span class="d"><b>Florida State University</b> · Ph.D., Nutritional Science</span></li>
+          <li><span class="d"><b>Seoul National University</b> · M.P.H., Health Policy and Management</span></li>
+          <li><span class="d"><b>University of South Carolina</b> · B.S., Chemistry</span></li>
         </ul>
       </div>
     </div>
@@ -449,6 +461,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
     <div class="join">
       <div>
         <h3>Graduate and undergraduate students</h3>
+        <p class="ko-sum">함께 연구할 대학원생과 학부연구생을 모집합니다.</p>
         <p>
           We are looking for students who want to work with data directly. No prior statistics or
           programming experience is required. What is required is the habit of asking what a number
@@ -462,15 +475,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
       </div>
       <div>
         <h3>Collaboration</h3>
+        <p class="ko-sum">운동생리학, 사회복지학, 심리학, 의학·보건학 분야와의 공동연구를 환영합니다.</p>
         <p>
           Questions about nutrition and function are rarely answerable from one discipline. The most
           productive work in this lab has come from working across these fields.
         </p>
         <ul>
-          <li>Exercise science — functional measurement and exercise intervention</li>
+          <li>Exercise physiology — functional measurement and exercise intervention</li>
           <li>Social welfare — vulnerable populations and social determinants</li>
           <li>Psychology — eating behaviour, self-efficacy, quality of life</li>
-          <li>Medicine and nursing — cancer survivorship and clinical cohorts</li>
+          <li>Medicine and public health — cancer survivorship and clinical cohorts</li>
         </ul>
       </div>
     </div>
@@ -484,12 +498,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
     <div>
       <h2>Contact</h2>
       <p>Enquiries about joining the lab, collaboration, and advisory work are all welcome. Email is the fastest way to reach us.</p>
+      <p class="ko-contact ko">연구실 지원, 공동연구, 자문 문의를 환영합니다.</p>
     </div>
     <dl>
       <dt>Email</dt>
       <dd><a href="mailto:hshin@deu.ac.kr">hshin@deu.ac.kr</a></dd>
       <dt>Office</dt>
-      <dd>Room 709, College of Human Ecology<br>Department of Food and Nutrition, Dong-Eui University<br>176 Eomgwang-ro, Busanjin-gu, Busan 47340<br>Republic of Korea</dd>
+      <dd class="ko">동의대학교 생활과학관 709호<br>식품영양학과<br>부산광역시 부산진구 엄광로 176</dd>
+      <dd>Room 709, College of Human Ecology<br>Dong-Eui University, Busan 47340, Republic of Korea</dd>
     </dl>
   </div>
 </div>
