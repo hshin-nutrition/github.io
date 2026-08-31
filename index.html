@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>영양·대사·신체기능 연구실 | 동의대학교 식품영양학과</title>
-<meta name="description" content="동의대학교 식품영양학과 영양·대사·신체기능 연구실. 영양 섭취가 대사와 신체기능으로 이어지는 과정, 그리고 그 개인차를 연구합니다.">
+<title>Nutrition, Metabolism &amp; Function Lab | Dong-Eui University</title>
+<meta name="description" content="Nutrition, Metabolism & Function Lab, Department of Food and Nutrition, Dong-Eui University. We study how nutrition translates into body composition, metabolism, and physical function — and why that translation differs from person to person.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#F7F8F5;
-  --paper-2:#EFF1EC;
   --ink:#111614;
   --ink-2:#3D4642;
   --ink-3:#6B7671;
@@ -20,9 +19,9 @@
   --signal:#B23A2C;
   --rule:#D4D8CF;
   --sans:'IBM Plex Sans KR',system-ui,-apple-system,sans-serif;
-  --serif:'Noto Serif KR',Georgia,serif;
+  --serif:'Newsreader',Georgia,serif;
   --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --measure:68ch;
+  --measure:66ch;
   --pad:clamp(1.25rem,5vw,4.5rem);
 }
 
@@ -37,91 +36,49 @@ body{
   font-family:var(--sans);
   font-weight:400;
   font-size:clamp(15px,1.05vw,16.5px);
-  line-height:1.75;
+  line-height:1.72;
   -webkit-font-smoothing:antialiased;
-  word-break:keep-all;
 }
+.ko{word-break:keep-all}
 
 a{color:var(--pine);text-decoration:none;border-bottom:1px solid var(--rule);transition:border-color .18s,color .18s}
 a:hover{color:var(--signal);border-bottom-color:var(--signal)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
+a:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
 
 .wrap{max-width:1060px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
 
 /* ---------- masthead ---------- */
 .masthead{padding:2.25rem 0 0}
 .masthead .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:baseline;justify-content:space-between}
-.affil{font-size:.86rem;color:var(--ink-3);letter-spacing:.01em;margin:0}
+.affil{font-size:.86rem;color:var(--ink-3);margin:0}
 nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:1.15rem;margin:0;padding:0;font-size:.86rem}
 nav a{border-bottom:none;color:var(--ink-2)}
 nav a:hover{color:var(--signal)}
 
 /* ---------- hero ---------- */
-.hero{padding:3.25rem 0 4rem}
+.hero{padding:5rem 0 6rem;border-bottom:1px solid var(--rule)}
 .hero h1{
   font-family:var(--serif);
-  font-weight:700;
-  font-size:clamp(2.1rem,6.2vw,3.9rem);
-  line-height:1.16;
-  letter-spacing:-.02em;
-  margin:0 0 .55rem;
-  color:var(--ink);
-}
-.hero .en{
-  font-family:var(--sans);
   font-weight:500;
-  font-size:clamp(.95rem,2vw,1.14rem);
-  letter-spacing:.015em;
+  font-size:clamp(2.3rem,7vw,4.6rem);
+  line-height:1.08;
+  letter-spacing:-.022em;
+  margin:0 0 1.15rem;
+  max-width:15ch;
+}
+.hero .ko-name{
+  font-weight:500;
+  font-size:clamp(.98rem,2.1vw,1.2rem);
   color:var(--moss);
-  margin:0 0 2.1rem;
+  margin:0 0 .35rem;
 }
-.thesis{
-  font-family:var(--serif);
-  font-weight:600;
-  font-size:clamp(1.12rem,2.6vw,1.6rem);
-  line-height:1.62;
-  max-width:30ch;
+.hero .place{
+  font-family:var(--mono);
+  font-size:.82rem;
+  color:var(--ink-3);
   margin:0;
-  color:var(--pine);
+  letter-spacing:-.01em;
 }
-.thesis em{font-style:normal;color:var(--signal)}
-
-/* ---------- figure ---------- */
-.figure{margin:3.25rem 0 0;border-top:1px solid var(--rule);padding-top:2rem}
-.figure svg{display:block;width:100%;height:auto;max-width:760px}
-.figcap{
-  max-width:56ch;margin:1.35rem 0 0;
-  font-size:.92rem;line-height:1.72;color:var(--ink-2);
-}
-.figsrc{
-  margin:.55rem 0 0;font-family:var(--mono);font-size:.76rem;
-  color:var(--ink-3);letter-spacing:-.01em;
-}
-
-/* svg type */
-.sv-grid{stroke:var(--rule);stroke-width:1}
-.sv-axis{stroke:var(--ink-3);stroke-width:1}
-.sv-gap{fill:var(--signal);opacity:.09}
-.sv-line-a{fill:none;stroke:var(--signal);stroke-width:2.6;stroke-linecap:round}
-.sv-line-b{fill:none;stroke:var(--moss);stroke-width:2.6;stroke-linecap:round}
-.sv-dot-a{fill:var(--signal)}
-.sv-dot-b{fill:var(--moss)}
-.sv-tick{font-family:var(--mono);font-size:15px;fill:var(--ink-3)}
-.sv-cat{font-family:var(--sans);font-size:17px;font-weight:500;fill:var(--ink-2)}
-.sv-sub{font-family:var(--mono);font-size:14px;fill:var(--ink-3)}
-.sv-name-a{font-family:var(--sans);font-size:18px;font-weight:600;fill:var(--signal)}
-.sv-name-b{font-family:var(--sans);font-size:18px;font-weight:600;fill:var(--moss)}
-.sv-val{font-family:var(--mono);font-size:15px;fill:var(--ink-2)}
-
-@media (prefers-reduced-motion:no-preference){
-  .sv-line-a{stroke-dasharray:325;stroke-dashoffset:325;animation:draw 1.15s cubic-bezier(.4,0,.2,1) .35s forwards}
-  .sv-line-b{stroke-dasharray:272;stroke-dashoffset:272;animation:draw .95s cubic-bezier(.4,0,.2,1) .35s forwards}
-  .sv-gap{opacity:0;animation:fade 1s ease 1.15s forwards}
-  .sv-late{opacity:0;animation:fade .7s ease 1.3s forwards}
-}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes fade{to{opacity:1}}
-.sv-gap{animation-fill-mode:forwards}
 
 /* ---------- sections ---------- */
 section{padding:4.25rem 0}
@@ -133,50 +90,50 @@ section + section{border-top:1px solid var(--rule)}
   width:3px;height:1.05em;background:var(--pine);
 }
 .sec-head h2{
-  font-family:var(--serif);font-weight:600;
-  font-size:clamp(1.3rem,3vw,1.72rem);line-height:1.35;
-  letter-spacing:-.015em;margin:0;
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(1.5rem,3.4vw,2rem);line-height:1.3;
+  letter-spacing:-.018em;margin:0;
 }
-.sec-head p{margin:.5rem 0 0;font-size:.9rem;color:var(--ink-3);font-family:var(--mono);letter-spacing:-.01em}
-
-.lede{font-size:clamp(1.02rem,1.9vw,1.16rem);line-height:1.82;max-width:var(--measure);color:var(--ink-2)}
-.lede + .lede{margin-top:1.35rem}
-.lede strong{font-weight:600;color:var(--ink)}
+.sec-head p{margin:.35rem 0 0;font-size:.86rem;color:var(--ink-3);font-family:var(--mono);letter-spacing:-.01em}
 
 /* research areas */
-.areas{display:grid;gap:0;margin:0}
+.areas{display:grid;gap:0}
 .area{
   display:grid;grid-template-columns:auto 1fr;gap:0 1.6rem;
-  padding:1.85rem 0;border-top:1px solid var(--rule);
+  padding:2rem 0;border-top:1px solid var(--rule);
 }
 .area:last-child{border-bottom:1px solid var(--rule)}
 .area-mark{
-  width:11px;height:11px;margin-top:.62em;
+  width:11px;height:11px;margin-top:.68em;
   border:2px solid var(--pine);border-radius:50%;
 }
 .area:nth-child(2) .area-mark{background:var(--pine)}
-.area:nth-child(3) .area-mark{background:var(--pine);border-color:var(--pine);border-radius:0}
+.area:nth-child(3) .area-mark{background:var(--pine);border-radius:0}
 .area h3{
-  font-family:var(--sans);font-weight:600;
-  font-size:1.09rem;margin:0 0 .5rem;letter-spacing:-.01em;
+  font-family:var(--serif);font-weight:600;
+  font-size:1.32rem;margin:0 0 .7rem;letter-spacing:-.015em;line-height:1.3;
+  max-width:26ch;
 }
-.area h3 span{display:block;font-weight:400;font-size:.83rem;color:var(--ink-3);letter-spacing:.01em;margin-top:.12rem}
-.area p{margin:0;max-width:62ch;color:var(--ink-2);font-size:.97rem}
+.area p{margin:0 0 .9rem;max-width:var(--measure);color:var(--ink-2);font-size:.99rem}
+.area p:last-of-type{margin-bottom:0}
 .area .keys{
-  margin:.85rem 0 0;padding:0;list-style:none;
-  display:flex;flex-wrap:wrap;gap:.4rem .95rem;
-  font-family:var(--mono);font-size:.79rem;color:var(--ink-3);
+  margin:1rem 0 0;padding:0;list-style:none;
+  display:flex;flex-wrap:wrap;gap:.4rem 1rem;
+  font-family:var(--mono);font-size:.78rem;color:var(--ink-3);
 }
 
 /* current work */
-.work{border-top:1px solid var(--rule);padding:2rem 0 0;margin-top:0}
-.work + .work{margin-top:2rem}
-.work-meta{font-family:var(--mono);font-size:.79rem;color:var(--signal);margin:0 0 .6rem;letter-spacing:-.01em}
-.work h3{font-family:var(--sans);font-weight:600;font-size:1.05rem;line-height:1.55;margin:0 0 .75rem;max-width:52ch}
-.work p{margin:0;max-width:64ch;color:var(--ink-2);font-size:.96rem}
-.stats{display:flex;flex-wrap:wrap;gap:1.9rem;margin:1.25rem 0 0;padding:0;list-style:none}
+.work{border-top:1px solid var(--rule);padding:2rem 0 0}
+.work + .work{margin-top:2.25rem}
+.work-meta{font-family:var(--mono);font-size:.78rem;color:var(--signal);margin:0 0 .6rem;letter-spacing:-.01em}
+.work h3{
+  font-family:var(--serif);font-weight:600;font-size:1.2rem;
+  line-height:1.42;margin:0 0 .8rem;max-width:50ch;letter-spacing:-.012em;
+}
+.work p{margin:0;max-width:var(--measure);color:var(--ink-2);font-size:.97rem}
+.stats{display:flex;flex-wrap:wrap;gap:1.9rem;margin:1.35rem 0 0;padding:0;list-style:none}
 .stats div{display:flex;flex-direction:column}
-.stats b{font-family:var(--mono);font-weight:500;font-size:1.35rem;color:var(--pine);line-height:1.2}
+.stats b{font-family:var(--mono);font-weight:500;font-size:1.38rem;color:var(--pine);line-height:1.2}
 .stats span{font-size:.79rem;color:var(--ink-3);margin-top:.15rem}
 
 /* publications */
@@ -187,55 +144,49 @@ section + section{border-top:1px solid var(--rule)}
 }
 .pubs li:last-child{border-bottom:1px solid var(--rule)}
 .pubs .yr{font-family:var(--mono);font-size:.85rem;color:var(--ink-3);padding-top:.14em}
-.pubs .t{margin:0;font-size:.97rem;line-height:1.62;max-width:66ch}
-.pubs .j{display:block;font-size:.85rem;color:var(--ink-3);margin-top:.22rem}
+.pubs .t{margin:0;font-size:.97rem;line-height:1.6;max-width:68ch}
+.pubs .j{display:block;font-size:.85rem;color:var(--ink-3);margin-top:.24rem}
 .pubnote{margin:1.4rem 0 0;font-size:.86rem;color:var(--ink-3)}
-
-/* teaching */
-.courses{list-style:none;margin:0;padding:0;display:grid;gap:0}
-.courses li{padding:1.35rem 0;border-top:1px solid var(--rule)}
-.courses li:last-child{border-bottom:1px solid var(--rule)}
-.courses h3{font-weight:600;font-size:1.02rem;margin:0 0 .35rem}
-.courses h3 span{font-weight:400;color:var(--ink-3);font-size:.83rem;margin-left:.5rem}
-.courses p{margin:0;color:var(--ink-2);font-size:.95rem;max-width:62ch}
 
 /* PI */
 .pi{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.5rem 3.5rem;align-items:start}
-.pi h3{font-family:var(--serif);font-weight:600;font-size:1.32rem;margin:0 0 .2rem}
-.pi .pi-en{font-size:.86rem;color:var(--ink-3);font-family:var(--mono);margin:0 0 1.15rem}
-.pi p{max-width:52ch;color:var(--ink-2);font-size:.97rem}
+.pi h3{font-family:var(--serif);font-weight:600;font-size:1.5rem;margin:0 0 .15rem;letter-spacing:-.015em}
+.pi .pi-en{font-size:.84rem;color:var(--ink-3);font-family:var(--mono);margin:0 0 1.25rem;letter-spacing:-.01em}
+.pi p{max-width:52ch;color:var(--ink-2);font-size:.98rem}
 .cv{list-style:none;margin:0;padding:0}
-.cv li{display:grid;grid-template-columns:6.6rem 1fr;gap:0 1rem;padding:.5rem 0;border-top:1px solid var(--rule);font-size:.9rem}
+.cv li{display:grid;grid-template-columns:6.2rem 1fr;gap:0 1rem;padding:.52rem 0;border-top:1px solid var(--rule);font-size:.9rem}
 .cv li:last-child{border-bottom:1px solid var(--rule)}
-.cv .p{font-family:var(--mono);font-size:.79rem;color:var(--ink-3);padding-top:.2em}
+.cv .p{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);padding-top:.22em}
 .cv .d{color:var(--ink-2)}
 .cv .d b{font-weight:600;color:var(--ink)}
-.cv-h{font-family:var(--mono);font-size:.79rem;color:var(--signal);margin:1.7rem 0 .6rem;letter-spacing:-.01em}
+.cv-h{font-family:var(--mono);font-size:.78rem;color:var(--signal);margin:1.8rem 0 .6rem;letter-spacing:-.01em}
 .cv-h:first-child{margin-top:0}
 
 /* join */
-.join{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem 3rem}
-.join h3{font-weight:600;font-size:1.02rem;margin:0 0 .55rem}
-.join p{margin:0;color:var(--ink-2);font-size:.95rem}
-.join ul{margin:.7rem 0 0;padding-left:1.1rem;color:var(--ink-2);font-size:.95rem}
-.join li{margin-bottom:.3rem}
+.join{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2.25rem 3rem}
+.join h3{font-family:var(--serif);font-weight:600;font-size:1.2rem;margin:0 0 .6rem;letter-spacing:-.012em}
+.join p{margin:0;color:var(--ink-2);font-size:.96rem}
+.join ul{margin:.75rem 0 0;padding-left:1.1rem;color:var(--ink-2);font-size:.96rem}
+.join li{margin-bottom:.32rem}
 
 /* contact */
-.contact{background:var(--pine);color:var(--paper);padding:3.5rem 0}
-.contact .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2rem 3rem}
-.contact h2{font-family:var(--serif);font-weight:600;font-size:1.32rem;margin:0 0 .4rem;color:var(--paper)}
-.contact p{margin:0;color:#C3D2CB;font-size:.95rem;line-height:1.7}
+.contact{background:var(--pine);color:var(--paper);padding:3.75rem 0}
+.contact .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem 3rem}
+.contact h2{font-family:var(--serif);font-weight:500;font-size:1.6rem;margin:0 0 .5rem;color:var(--paper);letter-spacing:-.015em}
+.contact p{margin:0;color:#C3D2CB;font-size:.96rem;line-height:1.7;max-width:44ch}
 .contact a{color:var(--paper);border-bottom-color:rgba(247,248,245,.35)}
 .contact a:hover{color:#F0C4BC;border-bottom-color:#F0C4BC}
-.contact dt{font-size:.78rem;color:#8FA79C;font-family:var(--mono);margin-bottom:.15rem}
-.contact dd{margin:0 0 1rem;font-size:.97rem}
+.contact dl{margin:0}
+.contact dt{font-size:.77rem;color:#8FA79C;font-family:var(--mono);margin-bottom:.18rem;letter-spacing:-.01em}
+.contact dd{margin:0 0 1.1rem;font-size:.97rem;line-height:1.6}
 
-footer{padding:1.75rem 0 2.5rem;font-size:.8rem;color:var(--ink-3)}
+footer{padding:1.85rem 0 2.6rem;font-size:.8rem;color:var(--ink-3)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-between}
 
 @media (max-width:720px){
+  .hero{padding:3.5rem 0 4rem}
   .pi{grid-template-columns:1fr;gap:2rem}
-  .area{grid-template-columns:1fr;gap:0}
+  .area{grid-template-columns:1fr}
   .area-mark{display:none}
   .pubs li{grid-template-columns:1fr;gap:.15rem}
   .pubs .yr{padding-top:0}
@@ -248,16 +199,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
 
 <header class="masthead">
   <div class="wrap">
-    <p class="affil">동의대학교 식품영양학과</p>
-    <nav aria-label="주요 메뉴">
+    <p class="affil">Department of Food and Nutrition, Dong-Eui University</p>
+    <nav aria-label="Main">
       <ul>
-        <li><a href="#about">연구 소개</a></li>
-        <li><a href="#areas">연구 분야</a></li>
-        <li><a href="#current">진행 연구</a></li>
-        <li><a href="#pubs">논문</a></li>
-        <li><a href="#teaching">교육</a></li>
-        <li><a href="#pi">연구책임자</a></li>
-        <li><a href="#contact">연락</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#current">Current work</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#pi">People</a></li>
+        <li><a href="#join">Join</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -267,103 +217,36 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
 
 <div class="hero">
   <div class="wrap">
-    <h1>영양·대사·<br>신체기능 연구실</h1>
-    <p class="en">Nutrition, Metabolism &amp; Function Lab</p>
-    <p class="thesis">충분히 먹는데도 영양상태가 나쁜 사람이 있습니다.<br>우리는 <em>그 간극</em>을 연구합니다.</p>
-
-    <figure class="figure">
-      <svg viewBox="0 0 620 350" role="img" aria-labelledby="figTitle figDesc">
-        <title id="figTitle">위암 생존자와 기타 암 생존자의 철 섭취 충족도 및 빈혈 유병률 비교</title>
-        <desc id="figDesc">철 섭취 충족도는 두 집단이 거의 같지만(0.88 대 0.86), 빈혈 유병률은 위암 생존자가 2.2배 높습니다.</desc>
-
-        <!-- gridlines -->
-        <line class="sv-grid" x1="130" y1="100" x2="400" y2="100"/>
-        <line class="sv-grid" x1="130" y1="175" x2="400" y2="175"/>
-        <line class="sv-axis" x1="130" y1="250" x2="400" y2="250"/>
-        <text class="sv-tick" x="112" y="105" text-anchor="end">2.0</text>
-        <text class="sv-tick" x="112" y="180" text-anchor="end">1.5</text>
-        <text class="sv-tick" x="112" y="255" text-anchor="end">1.0</text>
-
-        <!-- widening gap -->
-        <polygon class="sv-gap" points="130,247 400,70 400,250 130,250"/>
-
-        <!-- lines -->
-        <path class="sv-line-b" d="M130,250 L400,250"/>
-        <path class="sv-line-a" d="M130,247 L400,70"/>
-
-        <!-- dots -->
-        <circle class="sv-dot-b" cx="130" cy="250" r="5"/>
-        <circle class="sv-dot-b" cx="400" cy="250" r="5"/>
-        <circle class="sv-dot-a" cx="130" cy="247" r="5"/>
-        <circle class="sv-dot-a" cx="400" cy="70" r="5"/>
-
-        <!-- series labels -->
-        <g class="sv-late">
-          <text class="sv-name-a" x="414" y="66">위암 생존자</text>
-          <text class="sv-val" x="414" y="88">33.0%</text>
-          <text class="sv-name-b" x="414" y="246">기타 암 생존자</text>
-          <text class="sv-val" x="414" y="268">13.2%</text>
-        </g>
-
-        <!-- category labels -->
-        <text class="sv-cat" x="130" y="300" text-anchor="middle">철 섭취 충족도</text>
-        <text class="sv-sub" x="130" y="322" text-anchor="middle">0.88 vs 0.86</text>
-        <text class="sv-cat" x="400" y="300" text-anchor="middle">빈혈 유병률</text>
-        <text class="sv-sub" x="400" y="322" text-anchor="middle">PR 2.20 (1.78–2.71)</text>
-      </svg>
-      <figcaption class="figcap">
-        위암 생존자는 다른 암 생존자와 철 섭취량이 거의 같습니다. 그런데 빈혈은 2.2배 많습니다.
-        먹은 것과 몸에 남는 것은 다르고, 그 차이가 어디에서 생기는지가 우리 연구실의 출발점입니다.
-        <span class="figsrc">국민건강영양조사 2008–2024 · IASGO 2026 발표 예정</span>
-      </figcaption>
-    </figure>
+    <h1>Nutrition, Metabolism &amp; Function Lab</h1>
+    <p class="ko-name ko">영양·대사·신체기능 연구실</p>
+    <p class="place">Dong-Eui University · Busan, Republic of Korea</p>
   </div>
 </div>
 
-<section id="about">
+<section id="research">
   <div class="wrap">
     <div class="sec-head">
-      <h2>연구 소개</h2>
-      <p>About</p>
-    </div>
-    <p class="lede">
-      우리 연구실은 <strong>무엇을 먹는가에서 멈추지 않고, 그것이 대사와 신체기능으로 어떻게 이어지는지</strong>를 봅니다.
-      같은 섭취가 사람마다 다른 결과로 나타나는 이유를 개인의 대사적 표현형과 사회적 맥락 양쪽에서 찾습니다.
-    </p>
-    <p class="lede">
-      영양 연구는 오랫동안 섭취량을 재는 데 집중해왔습니다. 그러나 섭취가 충분해도 흡수되지 않거나,
-      흡수되어도 근육과 기능으로 이어지지 않는 경우가 적지 않습니다. 위장관 수술을 받은 암 생존자,
-      근육량과 악력이 함께 떨어지는 노인이 그 대표적인 예입니다. 우리는 이 <strong>섭취–상태–기능의 연결이
-      끊기는 지점</strong>을 찾고, 누구에게서 왜 끊기는지를 설명하려 합니다.
-    </p>
-    <p class="lede">
-      방법으로는 국민건강영양조사를 비롯한 인구집단 대표자료 분석과, 지역사회에서 직접 수행하는
-      체성분·신체기능 측정을 함께 사용합니다. 개인의 대사적 차이를 보는 정밀영양의 시각과,
-      그 차이가 어떤 사회적 조건 위에 놓여 있는지를 보는 시각이 한 연구 안에서 만나야 한다고 생각합니다.
-      그래서 <strong>사회복지학, 심리학, 체육학</strong>과의 공동연구를 열어두고 있습니다.
-    </p>
-  </div>
-</section>
-
-<section id="areas">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>연구 분야</h2>
-      <p>Research areas</p>
+      <h2>Research</h2>
+      <p>What we work on</p>
     </div>
     <div class="areas">
 
       <article class="area">
         <div class="area-mark" aria-hidden="true"></div>
         <div>
-          <h3>영양상태와 신체기능<span>Nutritional status and physical function</span></h3>
+          <h3>Osteosarcopenic obesity and physical function</h3>
           <p>
-            체성분과 근력, 보행 능력은 영양상태가 몸에 남긴 결과입니다. 체중이나 BMI만으로는
-            보이지 않는 변화를 체성분 지표와 기능 검사로 포착하고, 근감소성 비만처럼 근육과 지방의
-            문제가 겹쳐 나타나는 상태를 인구집단 수준에서 규명합니다.
+            Bone loss, muscle loss, and fat gain do not arrive separately. When all three converge —
+            a condition described as osteosarcopenic obesity — body weight and BMI reveal almost nothing
+            about it. People who look unremarkable on a scale can be the most functionally vulnerable.
+          </p>
+          <p>
+            We measure the three compartments together, ask which combinations track most closely with
+            declining grip strength and mobility, and look for early indicators that connect body
+            composition to function. This is the oldest and central line of work in the lab.
           </p>
           <ul class="keys">
-            <li>체성분</li><li>위상각</li><li>악력·신체수행능력</li><li>근감소성 비만</li><li>골밀도</li>
+            <li>osteosarcopenic obesity</li><li>body composition</li><li>bone mineral density</li><li>phase angle</li><li>grip strength</li><li>physical performance</li>
           </ul>
         </div>
       </article>
@@ -371,14 +254,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
       <article class="area">
         <div class="area-mark" aria-hidden="true"></div>
         <div>
-          <h3>대사적 표현형과 개인차<span>Metabolic phenotype and interindividual variability</span></h3>
+          <h3>Metabolic phenotype and interindividual variability</h3>
           <p>
-            같은 식사가 모두에게 같게 작용하지는 않습니다. 흡수와 대사의 개인차를 설명하는 지표를 찾고,
-            어떤 사람에게 어떤 영양 중재가 효과적인지를 구분하려 합니다. 유전체보다는 임상적으로
-            측정 가능한 표현형에서 출발해, 현장에서 쓸 수 있는 층화 기준을 만드는 것이 목표입니다.
+            The same meal does not act the same way in every body. We look for measurable markers that
+            explain differences in absorption and metabolic response, and ask which nutritional
+            interventions work for whom.
+          </p>
+          <p>
+            Rather than beginning with genomics, we start from clinically measurable phenotypes, aiming
+            for stratification criteria that can actually be used in practice.
           </p>
           <ul class="keys">
-            <li>정밀영양</li><li>영양판정</li><li>흡수와 이용</li><li>중재 반응의 이질성</li>
+            <li>precision nutrition</li><li>nutritional assessment</li><li>absorption and utilisation</li><li>treatment effect heterogeneity</li>
           </ul>
         </div>
       </article>
@@ -386,14 +273,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
       <article class="area">
         <div class="area-mark" aria-hidden="true"></div>
         <div>
-          <h3>취약집단의 영양과 사회적 맥락<span>Nutritional vulnerability and its social context</span></h3>
+          <h3>Nutritional vulnerability and its social context</h3>
           <p>
-            암 생존자, 고령자, 사회적으로 고립된 사람들은 같은 조언으로 같은 결과에 이르지 못합니다.
-            누가 왜 영양적으로 취약해지는지를 개인 요인과 사회경제적 조건을 함께 넣어 분석하고,
-            그 결과를 실제 정책과 현장 프로그램의 언어로 옮기는 일까지를 연구의 범위로 봅니다.
+            Cancer survivors, older adults, and socially isolated people do not arrive at the same outcome
+            from the same advice. We analyse who becomes nutritionally vulnerable and why, holding
+            individual and socioeconomic factors in the same model.
+          </p>
+          <p>
+            Translating those findings into the language of policy and community programmes is part of the
+            work, not an afterthought.
           </p>
           <ul class="keys">
-            <li>암 생존자</li><li>노년기 건강</li><li>사회생태학적 모형</li><li>건강형평성</li><li>보건영양정책</li>
+            <li>cancer survivorship</li><li>healthy ageing</li><li>social-ecological model</li><li>health equity</li><li>public health nutrition policy</li>
           </ul>
         </div>
       </article>
@@ -405,163 +296,142 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
 <section id="current">
   <div class="wrap">
     <div class="sec-head">
-      <h2>진행 중인 연구</h2>
-      <p>Current work · 2026</p>
+      <h2>Current work</h2>
+      <p>2026</p>
     </div>
 
     <article class="work">
-      <p class="work-meta">IASGO 2026 · 국민건강영양조사 2008–2024</p>
-      <h3>충분한 섭취, 불충분한 상태 — 위장관암 생존자의 빈혈과 저체중</h3>
+      <p class="work-meta">IASGO 2026 · KNHANES 2008–2024</p>
+      <h3>Adequate intake, inadequate status: anemia and underweight in gastrointestinal cancer survivors</h3>
       <p>
-        위암·대장암·기타 암 생존자 3,600여 명을 비교했습니다. 철 섭취 충족도는 세 집단이 사실상 같았지만,
-        빈혈과 저체중은 위암 생존자에게 뚜렷하게 몰려 있었고 진단 후 10년이 지나도 줄지 않았습니다.
-        식사 조절만으로는 회복되지 않는 문제이며, 흡수를 겨냥한 개입과 정기적인 혈액·영양 모니터링이
-        필요하다는 점을 시사합니다.
+        We compared gastric, colorectal, and other cancer survivors across fifteen survey years. Iron
+        intake adequacy was essentially identical across the three groups, yet anemia and underweight
+        clustered sharply among gastric cancer survivors and showed no attenuation even ten years after
+        diagnosis. The dissociation between what is eaten and what the body retains points to a problem
+        dietary modification alone is unlikely to correct, and argues for routine hematologic monitoring
+        with absorption-targeted intervention.
       </p>
       <ul class="stats">
-        <li><div><b>3,646</b><span>분석 대상자</span></div></li>
-        <li><div><b>2.20</b><span>빈혈 유병비 (PR)</span></div></li>
-        <li><div><b>4.28</b><span>저체중 유병비 (PR)</span></div></li>
-        <li><div><b>15</b><span>조사 연차</span></div></li>
+        <li><div><b>3,646</b><span>survivors analysed</span></div></li>
+        <li><div><b>2.20</b><span>prevalence ratio, anemia</span></div></li>
+        <li><div><b>4.28</b><span>prevalence ratio, underweight</span></div></li>
+        <li><div><b>15</b><span>survey years pooled</span></div></li>
       </ul>
     </article>
 
     <article class="work">
-      <p class="work-meta">ICOMES 2026 · 국민건강영양조사 2022–2024</p>
-      <h3>한국 노인의 동적감소성 복부비만 — 사회생태학적 모형을 적용한 다수준 위험요인 분석</h3>
+      <p class="work-meta">ICOMES 2026 · KNHANES 2022–2024</p>
+      <h3>Multilevel risk factors for dynapenic abdominal obesity among Korean older adults</h3>
       <p>
-        악력 저하와 복부비만이 함께 나타나는 상태를 65세 이상 4,058명에서 분석했습니다. 개인·대인·지역사회·정책의
-        네 수준을 차례로 투입한 결과, 설명력의 거의 전부가 개인 수준에서 나왔고 그중에서도 신체 비활동과
-        앉아 있는 시간이 독립적으로 기여했습니다. 이 결과는 다음 질문으로 이어집니다 — 개인 수준으로 좁혀
-        들어간다면, 그 안에서 사람을 가르는 기준은 무엇인가.
+        Applying the Social-Ecological Model to 4,058 adults aged 65 and older, we entered intrapersonal,
+        interpersonal, community, and policy factors in sequence. Nearly all explanatory gain came from the
+        intrapersonal level, driven by physical inactivity and sedentary time. That result sharpens the
+        next question rather than closing it: if the action is at the individual level, what distinguishes
+        one individual from another?
       </p>
       <ul class="stats">
-        <li><div><b>4,058</b><span>분석 대상자</span></div></li>
-        <li><div><b>7.6%</b><span>가중 유병률</span></div></li>
-        <li><div><b>1.49</b><span>신체 비활동 aOR</span></div></li>
-        <li><div><b>16.1%</b><span>80세 이상 유병률</span></div></li>
+        <li><div><b>4,058</b><span>older adults</span></div></li>
+        <li><div><b>7.6%</b><span>weighted prevalence</span></div></li>
+        <li><div><b>1.49</b><span>aOR, physical inactivity</span></div></li>
+        <li><div><b>16.1%</b><span>prevalence at age 80+</span></div></li>
       </ul>
     </article>
   </div>
 </section>
 
-<section id="pubs">
+<section id="publications">
   <div class="wrap">
     <div class="sec-head">
-      <h2>주요 논문</h2>
-      <p>Selected publications</p>
+      <h2>Selected publications</h2>
+      <p>Peer-reviewed</p>
     </div>
     <ol class="pubs">
       <li>
         <span class="yr">2026</span>
-        <p class="t">Extracellular Water and Phase Angle, Markers of Heightened Inflammatory State, and Their Extrapolative Potential for Body Composition Outcomes in Adults
-        <span class="j">Cvijetić S, Boschiero D, <b>Shin H</b>, et al. <i>Metabolites</i> 16(1):40</span></p>
+        <p class="t">Extracellular water and phase angle, markers of heightened inflammatory state, and their extrapolative potential for body composition outcomes in adults
+        <span class="j">Cvijetić S, Boschiero D, <b>Shin H</b>, Reilly AS, Noorani ST, Vasiljevic N, Ilich JZ. <i>Metabolites</i> 16(1):40</span></p>
       </li>
       <li>
         <span class="yr">2023</span>
-        <p class="t">경제활동 여부에 따른 결혼이주여성의 미충족 의료 영향요인 — 앤더슨 행동모형의 적용
-        <span class="j"><b>신혜형</b>, 강신욱. <i>사회복지정책과 실천</i> 9(2):227–254</span></p>
+        <p class="t">Factors affecting unmet medical care depending on the economic activity of married migrant women in Korea: application of Andersen's behavioral model
+        <span class="j"><b>Shin H</b>, Kang S. <i>Social Welfare Policy and Practice</i> 9(2):227–254</span></p>
       </li>
       <li>
         <span class="yr">2023</span>
-        <p class="t">사회적 고립에 영향을 미치는 요인 — 주관적 외로움 인식에 따른 비교
-        <span class="j"><b>신혜형</b>, 최승아, 김혜미, 이연희. <i>사회복지정책</i> 50(3):5–29</span></p>
+        <p class="t">Factors affecting social isolation: a comparison based on perceived loneliness
+        <span class="j"><b>Shin H</b>, Choi S, Kim H, Lee Y. <i>Social Welfare Policy</i> 50(3):5–29</span></p>
       </li>
       <li>
         <span class="yr">2022</span>
-        <p class="t">Cardiometabolic Indices after Weight Loss with Calcium or Dairy Foods: Secondary Analyses from a Randomized Trial with Overweight/Obese Postmenopausal Women
+        <p class="t">Cardiometabolic indices after weight loss with calcium or dairy foods: secondary analyses from a randomized trial with overweight/obese postmenopausal women
         <span class="j">Ilich JZ, Liu PY, <b>Shin H</b>, Kim Y, Chi Y. <i>Nutrients</i> 14(5):1082</span></p>
       </li>
       <li>
         <span class="yr">2019</span>
-        <p class="t">Role of Calcium and Low-Fat Dairy Foods in Weight-Loss Outcomes Revisited: Results from the Randomized Trial of Effects on Bone and Body Composition in Overweight/Obese Postmenopausal Women
-        <span class="j">Ilich JZ, Kelly OJ, Liu PY, <b>Shin H</b>, et al. <i>Nutrients</i> 11(5):1157</span></p>
+        <p class="t">Role of calcium and low-fat dairy foods in weight-loss outcomes revisited: results from the randomized trial of effects on bone and body composition in overweight/obese postmenopausal women
+        <span class="j">Ilich JZ, Kelly OJ, Liu PY, <b>Shin H</b>, Kim Y, Chi Y, Wickrama KKAS, Colic-Baric I. <i>Nutrients</i> 11(5):1157</span></p>
       </li>
       <li>
         <span class="yr">2014</span>
-        <p class="t">Physical Performance in Relation to Body Composition and Bone Mineral Density in Healthy, Overweight, and Obese Postmenopausal Women
+        <p class="t">Physical performance in relation to body composition and bone mineral density in healthy, overweight, and obese postmenopausal women
         <span class="j"><b>Shin H</b>, Liu PY, Panton LB, Ilich JZ. <i>Journal of Geriatric Physical Therapy</i> 37(1):7–16</span></p>
       </li>
       <li>
         <span class="yr">2013</span>
-        <p class="t">Dairy Product Intake Is Inversely Associated with Metabolic Syndrome in Korean Adults: Anseong and Ansan Cohort of the Korean Genome and Epidemiology Study
+        <p class="t">Dairy product intake is inversely associated with metabolic syndrome in Korean adults: Anseong and Ansan cohort of the Korean Genome and Epidemiology Study
         <span class="j"><b>Shin H</b>, Yoon YS, Lee Y, Kim CI, Oh SW. <i>Journal of Korean Medical Science</i> 28(10):1482–1488</span></p>
       </li>
       <li>
         <span class="yr">2011</span>
-        <p class="t">Self-Efficacy Improves Weight Loss in Overweight/Obese Postmenopausal Women during a 6-Month Weight Loss Intervention
+        <p class="t">Self-efficacy improves weight loss in overweight/obese postmenopausal women during a 6-month weight loss intervention
         <span class="j"><b>Shin H</b>, Shin J, Liu PY, Dutton GR, Abood DA, Ilich JZ. <i>Nutrition Research</i> 31(11):822–828</span></p>
       </li>
       <li>
         <span class="yr">2011</span>
-        <p class="t">Relationship of Physical Performance with Body Composition and Bone Mineral Density in Individuals over 60 Years of Age: A Systematic Review
+        <p class="t">Relationship of physical performance with body composition and bone mineral density in individuals over 60 years of age: a systematic review
         <span class="j"><b>Shin H</b>, Panton LB, Dutton GR, Ilich JZ. <i>Journal of Aging Research</i> 2011:191896</span></p>
       </li>
     </ol>
-    <p class="pubnote">국제 학술지 15편, 국내 학술지 및 학술대회 발표 다수. 전체 목록은 요청해 주시면 보내드립니다.</p>
-  </div>
-</section>
-
-<section id="teaching">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>교육</h2>
-      <p>Teaching</p>
-    </div>
-    <ul class="courses">
-      <li>
-        <h3>영양판정<span>Nutritional Assessment</span></h3>
-        <p>
-          식사조사, 신체계측, 생화학 지표, 임상 징후를 통해 개인과 집단의 영양상태를 판정하는 방법을 다룹니다.
-          연구실의 문제의식이 그대로 강의의 주제이기도 합니다 — 무엇을 재야 실제 상태를 알 수 있는가.
-        </p>
-      </li>
-      <li>
-        <h3>식사요법 및 실습<span>Medical Nutrition Therapy and Practice</span></h3>
-        <p>
-          질환별 영양관리의 원리를 익히고 실제 식단으로 옮기는 과정을 실습합니다. 위장관 수술 후 영양관리,
-          노년기 근감소증, 대사증후군 등 연구실에서 다루는 주제를 사례로 함께 살펴봅니다.
-        </p>
-      </li>
-    </ul>
+    <p class="pubnote">Fifteen international peer-reviewed articles, with additional Korean-language publications and conference presentations. A full list is available on request.</p>
   </div>
 </section>
 
 <section id="pi">
   <div class="wrap">
     <div class="sec-head">
-      <h2>연구책임자</h2>
-      <p>Principal investigator</p>
+      <h2>Principal investigator</h2>
+      <p>People</p>
     </div>
     <div class="pi">
       <div>
-        <h3>신혜형</h3>
-        <p class="pi-en">Hyehyung Shin, Ph.D., MPH · 조교수</p>
+        <h3>Hyehyung Shin</h3>
+        <p class="pi-en">Ph.D., MPH · Assistant Professor</p>
         <p>
-          영양학과 보건정책을 함께 공부했습니다. 플로리다주립대학교에서 폐경 후 여성의 체성분과 신체수행능력을
-          주제로 박사학위를 받았고, 서울대학교 보건대학원에서 보건정책관리학으로 석사학위를 받았습니다.
+          Trained in both nutritional science and health policy. Ph.D. from Florida State University on
+          body composition and physical performance in postmenopausal women; MPH in health policy and
+          management from Seoul National University.
         </p>
         <p>
-          건강보험심사평가원과 한국보건산업진흥원에서 만성질환 관리와 국가 영양정책을 다뤘고, 이후 10년간
-          삼성생명 은퇴연구소에서 고령화와 만성질환 예방을 연구했습니다. 정책 현장과 기업, 그리고 다시 학교로
-          돌아오는 동안 관심의 축은 바뀌지 않았습니다 — <b>영양이 몸에 실제로 남기는 결과, 그리고 그 결과가
-          사람마다 달라지는 이유</b>입니다.
+          Worked on chronic disease management and national nutrition policy at the Health Insurance
+          Review and Assessment Service and the Korea Health Industry Development Institute, then spent a
+          decade at Samsung Life researching ageing and chronic disease prevention. Across policy, industry,
+          and now the university, one question has stayed constant: <b>what nutrition actually leaves behind
+          in the body, and why that differs from one person to the next.</b>
         </p>
       </div>
       <div>
         <p class="cv-h">Appointments</p>
         <ul class="cv">
-          <li><span class="p">2026–</span><span class="d"><b>동의대학교</b> 식품영양학과 조교수</span></li>
-          <li><span class="p">2012–2022</span><span class="d"><b>삼성생명</b> 보험연구소 책임연구원</span></li>
-          <li><span class="p">2011–2012</span><span class="d"><b>한국보건산업진흥원</b> 영양정책팀 책임연구원</span></li>
-          <li><span class="p">2005–2006</span><span class="d"><b>건강보험심사평가원</b> 일차의료질평가팀 연구원</span></li>
+          <li><span class="p">2026–</span><span class="d">Assistant Professor, Food and Nutrition · <b>Dong-Eui University</b></span></li>
+          <li><span class="p">2012–2022</span><span class="d">Senior Researcher, Research Institute of Insurance · <b>Samsung Life</b></span></li>
+          <li><span class="p">2011–2012</span><span class="d">Senior Researcher, Nutrition Policy &amp; Promotion · <b>KHIDI</b></span></li>
+          <li><span class="p">2005–2006</span><span class="d">Researcher, Primary Healthcare Quality Assessment · <b>HIRA</b></span></li>
         </ul>
         <p class="cv-h">Education</p>
         <ul class="cv">
-          <li><span class="p">2022–</span><span class="d">사회복지학 박사과정 · <b>부산대학교</b></span></li>
-          <li><span class="p">2011</span><span class="d">Ph.D. Nutritional Science · <b>Florida State University</b></span></li>
-          <li><span class="p">2006</span><span class="d">보건학 석사, 보건정책관리학 · <b>서울대학교</b></span></li>
-          <li><span class="p">2003</span><span class="d">B.S. Chemistry · <b>University of South Carolina</b></span></li>
+          <li><span class="p">2011</span><span class="d">Ph.D., Nutritional Science · <b>Florida State University</b></span></li>
+          <li><span class="p">2006</span><span class="d">M.P.H., Health Policy and Management · <b>Seoul National University</b></span></li>
+          <li><span class="p">2003</span><span class="d">B.S., Chemistry · <b>University of South Carolina</b></span></li>
         </ul>
       </div>
     </div>
@@ -571,33 +441,34 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
 <section id="join">
   <div class="wrap">
     <div class="sec-head">
-      <h2>함께하기</h2>
-      <p>Join us</p>
+      <h2>Join us</h2>
+      <p>Students and collaborators</p>
     </div>
     <div class="join">
       <div>
-        <h3>대학원생·학부연구생</h3>
+        <h3>Graduate and undergraduate students</h3>
         <p>
-          자료를 직접 만지고 싶은 학생을 찾습니다. 통계나 프로그래밍 경험은 없어도 됩니다.
-          다만 숫자가 실제로 무엇을 뜻하는지 끝까지 묻는 태도는 필요합니다.
+          We are looking for students who want to work with data directly. No prior statistics or
+          programming experience is required. What is required is the habit of asking what a number
+          actually means, and not stopping at the first answer.
         </p>
         <ul>
-          <li>국민건강영양조사 등 대규모 자료 분석</li>
-          <li>지역사회 체성분·신체기능 측정 참여</li>
-          <li>학회 발표와 논문 작성 전 과정 경험</li>
+          <li>Analysis of large national survey data, including KNHANES</li>
+          <li>Community-based body composition and physical function measurement</li>
+          <li>The full arc from study design to conference presentation and publication</li>
         </ul>
       </div>
       <div>
-        <h3>공동연구</h3>
+        <h3>Collaboration</h3>
         <p>
-          영양과 기능의 문제는 한 분야만으로 풀리지 않습니다. 아래 분야의 연구자와 함께할 때
-          가장 좋은 질문이 나온다고 생각합니다.
+          Questions about nutrition and function are rarely answerable from one discipline. The most
+          productive work in this lab has come from working across these fields.
         </p>
         <ul>
-          <li>체육학 — 신체기능 측정과 운동 중재</li>
-          <li>사회복지학 — 취약집단 접근과 사회적 결정요인</li>
-          <li>심리학 — 식행동, 자기효능감, 삶의 질</li>
-          <li>의학·간호학 — 암 생존자 및 임상 코호트</li>
+          <li>Exercise science — functional measurement and exercise intervention</li>
+          <li>Social welfare — vulnerable populations and social determinants</li>
+          <li>Psychology — eating behaviour, self-efficacy, quality of life</li>
+          <li>Medicine and nursing — cancer survivorship and clinical cohorts</li>
         </ul>
       </div>
     </div>
@@ -609,22 +480,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
 <div class="contact" id="contact">
   <div class="wrap">
     <div>
-      <h2>연락</h2>
-      <p>연구실 지원, 공동연구, 자문 문의를 환영합니다. 메일로 연락 주시면 회신드리겠습니다.</p>
+      <h2>Contact</h2>
+      <p>Enquiries about joining the lab, collaboration, and advisory work are all welcome. Email is the fastest way to reach us.</p>
     </div>
     <dl>
       <dt>Email</dt>
-      <dd><a href="mailto:hyehyung@gmail.com">hyehyung@gmail.com</a></dd>
+      <dd><a href="mailto:hshin@deu.ac.kr">hshin@deu.ac.kr</a></dd>
       <dt>Office</dt>
-      <dd>동의대학교 식품영양학과<br>부산광역시 부산진구 엄광로 176</dd>
+      <dd>Room 709, College of Human Ecology<br>Department of Food and Nutrition, Dong-Eui University<br>176 Eomgwang-ro, Busanjin-gu, Busan 47340<br>Republic of Korea</dd>
     </dl>
   </div>
 </div>
 
 <footer>
   <div class="wrap">
-    <span>영양·대사·신체기능 연구실 · 동의대학교 식품영양학과</span>
-    <span>Nutrition, Metabolism &amp; Function Lab</span>
+    <span>Nutrition, Metabolism &amp; Function Lab · Dong-Eui University</span>
+    <span class="ko">영양·대사·신체기능 연구실</span>
   </div>
 </footer>
 
