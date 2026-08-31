@@ -10,14 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F7F8F5;
-  --ink:#111614;
-  --ink-2:#3D4642;
-  --ink-3:#6B7671;
-  --pine:#1D3D35;
-  --moss:#5C7A6B;
-  --signal:#B23A2C;
-  --rule:#D4D8CF;
+  --paper:#F2EDEB;        /* DEU Light Gray */
+  --ink:#12161C;
+  --ink-2:#3D434D;
+  --ink-3:#6B6F76;
+  --pine:#0B3D91;         /* DEU Main Color */
+  --moss:#4A6BA8;
+  --signal:#8D6E26;       /* DEU Gold */
+  --signal-deep:#6F5518;
+  --rule:#D8D0CD;
   --sans:'IBM Plex Sans KR',system-ui,-apple-system,sans-serif;
   --serif:'Newsreader',Georgia,serif;
   --mono:'IBM Plex Mono',ui-monospace,monospace;
@@ -65,6 +66,7 @@ nav a:hover{color:var(--signal)}
   letter-spacing:-.022em;
   margin:0 0 1.15rem;
   max-width:15ch;
+  color:var(--pine);
 }
 .hero .ko-name{
   font-weight:500;
@@ -104,11 +106,9 @@ section + section{border-top:1px solid var(--rule)}
 }
 .area:last-child{border-bottom:1px solid var(--rule)}
 .area-mark{
-  width:11px;height:11px;margin-top:.68em;
-  border:2px solid var(--pine);border-radius:50%;
+  width:10px;height:10px;margin-top:.72em;
+  background:var(--pine);
 }
-.area:nth-child(2) .area-mark{background:var(--pine)}
-.area:nth-child(3) .area-mark{background:var(--pine);border-radius:0}
 .area h3{
   font-family:var(--serif);font-weight:600;
   font-size:1.32rem;margin:0 0 .7rem;letter-spacing:-.015em;line-height:1.3;
@@ -125,7 +125,7 @@ section + section{border-top:1px solid var(--rule)}
 /* current work */
 .work{border-top:1px solid var(--rule);padding:2rem 0 0}
 .work + .work{margin-top:2.25rem}
-.work-meta{font-family:var(--mono);font-size:.78rem;color:var(--signal);margin:0 0 .6rem;letter-spacing:-.01em}
+.work-meta{font-family:var(--mono);font-size:.78rem;color:var(--signal-deep);margin:0 0 .6rem;letter-spacing:-.01em}
 .work h3{
   font-family:var(--serif);font-weight:600;font-size:1.2rem;
   line-height:1.42;margin:0 0 .8rem;max-width:50ch;letter-spacing:-.012em;
@@ -159,7 +159,7 @@ section + section{border-top:1px solid var(--rule)}
 .cv .p{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);padding-top:.22em}
 .cv .d{color:var(--ink-2)}
 .cv .d b{font-weight:600;color:var(--ink)}
-.cv-h{font-family:var(--mono);font-size:.78rem;color:var(--signal);margin:1.8rem 0 .6rem;letter-spacing:-.01em}
+.cv-h{font-family:var(--mono);font-size:.78rem;color:var(--signal-deep);margin:1.8rem 0 .6rem;letter-spacing:-.01em}
 .cv-h:first-child{margin-top:0}
 
 /* join */
@@ -173,11 +173,11 @@ section + section{border-top:1px solid var(--rule)}
 .contact{background:var(--pine);color:var(--paper);padding:3.75rem 0}
 .contact .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem 3rem}
 .contact h2{font-family:var(--serif);font-weight:500;font-size:1.6rem;margin:0 0 .5rem;color:var(--paper);letter-spacing:-.015em}
-.contact p{margin:0;color:#C3D2CB;font-size:.96rem;line-height:1.7;max-width:44ch}
+.contact p{margin:0;color:#BCC9E2;font-size:.96rem;line-height:1.7;max-width:44ch}
 .contact a{color:var(--paper);border-bottom-color:rgba(247,248,245,.35)}
-.contact a:hover{color:#F0C4BC;border-bottom-color:#F0C4BC}
+.contact a:hover{color:#E3C87E;border-bottom-color:#E3C87E}
 .contact dl{margin:0}
-.contact dt{font-size:.77rem;color:#8FA79C;font-family:var(--mono);margin-bottom:.18rem;letter-spacing:-.01em}
+.contact dt{font-size:.77rem;color:#8FA2C6;font-family:var(--mono);margin-bottom:.18rem;letter-spacing:-.01em}
 .contact dd{margin:0 0 1.1rem;font-size:.97rem;line-height:1.6}
 
 footer{padding:1.85rem 0 2.6rem;font-size:.8rem;color:var(--ink-3)}
@@ -234,19 +234,21 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-
       <article class="area">
         <div class="area-mark" aria-hidden="true"></div>
         <div>
-          <h3>Osteosarcopenic obesity and physical function</h3>
+          <h3>Bone, muscle, and fat: body composition and physical function</h3>
           <p>
-            Bone loss, muscle loss, and fat gain do not arrive separately. When all three converge —
-            a condition described as osteosarcopenic obesity — body weight and BMI reveal almost nothing
-            about it. People who look unremarkable on a scale can be the most functionally vulnerable.
+            Bone loss, muscle loss, and fat gain do not arrive separately. When all three converge — a
+            condition described in the literature as osteosarcopenic obesity — neither body weight nor BMI
+            reveals it. People who look unremarkable on a scale can be the most functionally vulnerable.
           </p>
           <p>
-            We measure the three compartments together, ask which combinations track most closely with
-            declining grip strength and mobility, and look for early indicators that connect body
-            composition to function. This is the oldest and central line of work in the lab.
+            Capturing all three compartments at once remains difficult with the population data currently
+            available in Korea, where bone density has been assessed in only a limited number of survey
+            cycles. We therefore begin from the muscle–fat axis, in conditions such as dynapenic abdominal
+            obesity, and work toward study designs that bring bone back into the picture. Closing that gap
+            is one of the longer-term aims of the lab.
           </p>
           <ul class="keys">
-            <li>osteosarcopenic obesity</li><li>body composition</li><li>bone mineral density</li><li>phase angle</li><li>grip strength</li><li>physical performance</li>
+            <li>muscle mass</li><li>adiposity</li><li>bone mineral density</li><li>dynapenic abdominal obesity</li><li>grip strength</li><li>phase angle</li>
           </ul>
         </div>
       </article>
